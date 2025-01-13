@@ -9733,6 +9733,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ranfdev/deepobj@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@ranfdev/deepobj@npm:1.0.2"
+  checksum: 849cf8c2ac967062d057394caba363c69d632c2f576b1383fa22b6a0ff97ab56ed78ee477fd27e3214a3f14594b7151d428a837328b8874ede9d9547693938e9
+  languageName: node
+  linkType: hard
+
 "@reach/dialog@npm:0.10.5":
   version: 0.10.5
   resolution: "@reach/dialog@npm:0.10.5"
@@ -23396,6 +23403,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crossfilter2@npm:1.4.0-alpha.6":
+  version: 1.4.0-alpha.6
+  resolution: "crossfilter2@npm:1.4.0-alpha.6"
+  dependencies:
+    lodash.result: ^4.4.0
+  checksum: 3388a77779ed061e5cf9d89433b9de371d192bc57db09b0511de15c4f8c26d2a81e7310c085472b55ad909a61e1a20338b12f2f8573140d6f9cf6b040bd1c82a
+  languageName: node
+  linkType: hard
+
+"crossfilter2@npm:^1.4.0-alpha.6":
+  version: 1.5.4
+  resolution: "crossfilter2@npm:1.5.4"
+  dependencies:
+    "@ranfdev/deepobj": 1.0.2
+  checksum: e006982c500bc34da7b4bde5a9e0e0096eb5a3542d20567926a3c416d89903cf1c909bfe65837066305d6d07de3ca6515a7193c269ae7c8c24bcb3cf74493cbd
+  languageName: node
+  linkType: hard
+
 "crypt@npm:~0.0.1":
   version: 0.0.2
   resolution: "crypt@npm:0.0.2"
@@ -35523,6 +35548,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.result@npm:^4.4.0":
+  version: 4.5.2
+  resolution: "lodash.result@npm:4.5.2"
+  checksum: 69e149271f1476ee0f3e7eb2b1b3cde083b56d47c297ca8b584b205aab0e8d56f1da1e3bfec7ae6b4dc5370494a573ebc41d06d4a28b190fd97e25e93dfd4839
+  languageName: node
+  linkType: hard
+
 "lodash.snakecase@npm:^4.1.1":
   version: 4.1.1
   resolution: "lodash.snakecase@npm:4.1.1"
@@ -40596,7 +40628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"q@npm:^1.1.2, q@npm:^1.5.1":
+"q@npm:^1.1.2, q@npm:^1.4.1, q@npm:^1.5.1":
   version: 1.5.1
   resolution: "q@npm:1.5.1"
   checksum: 147baa93c805bc1200ed698bdf9c72e9e42c05f96d007e33a558b5fdfd63e5ea130e99313f28efc1783e90e6bdb4e48b67a36fcc026b7b09202437ae88a1fb12
@@ -42360,6 +42392,15 @@ __metadata:
   dependencies:
     redis-errors: ^1.0.0
   checksum: 89290ae530332f2ae37577647fa18208d10308a1a6ba750b9d9a093e7398f5e5253f19855b64c98757f7129cccce958e4af2573fdc33bad41405f87f1943459a
+  languageName: node
+  linkType: hard
+
+"reductio@npm:^0.6.2":
+  version: 0.6.3
+  resolution: "reductio@npm:0.6.3"
+  dependencies:
+    crossfilter2: ^1.4.0-alpha.6
+  checksum: a8784489f97f83945aa8e18ce3a11abc8f6fc660fa161145fd607f6182207d824528cedc24e6d9cc39c2e853032e85c249db867e04b150b00d48fd51ce2763b1
   languageName: node
   linkType: hard
 
@@ -47740,6 +47781,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"universe@npm:0.8.1":
+  version: 0.8.1
+  resolution: "universe@npm:0.8.1"
+  dependencies:
+    crossfilter2: 1.4.0-alpha.6
+    q: ^1.4.1
+    reductio: ^0.6.2
+  checksum: 3692e0fa848341a27d27c9abca16bcd0e762f3bb62302247d492327ed160980778066af06184c62bc78412fd98c0550cbdc33c1ddcdc29c837b2d814b07d468a
+  languageName: node
+  linkType: hard
+
 "universe@workspace:.":
   version: 0.0.0-use.local
   resolution: "universe@workspace:."
@@ -47758,11 +47810,13 @@ __metadata:
     i18next-parser: 8.6.0
     js-yaml: 4.1.0
     moti: 0.29.0
+    postinstall-postinstall: 2.1.0
     prettier: 3.3.2
     prettier-plugin-organize-imports: 3.2.4
     syncpack: 8.5.14
     turbo: 1.10.16
     turbo-ignore: 1.11.3
+    universe: 0.8.1
   languageName: unknown
   linkType: soft
 

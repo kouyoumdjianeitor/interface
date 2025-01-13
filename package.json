@@ -16,11 +16,13 @@
     "i18next-parser": "8.6.0",
     "js-yaml": "4.1.0",
     "moti": "0.29.0",
+    "postinstall-postinstall": "2.1.0",
     "prettier": "3.3.2",
     "prettier-plugin-organize-imports": "3.2.4",
     "syncpack": "8.5.14",
     "turbo": "1.10.16",
-    "turbo-ignore": "1.11.3"
+    "turbo-ignore": "1.11.3",
+    "universe": "0.8.1"
   },
   "engines": {
     "node": "=18.16.0",
